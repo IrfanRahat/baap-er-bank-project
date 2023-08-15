@@ -5,6 +5,11 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const depositAmountString = depositField.value;
 //  string to number kore nilam
     const depositAmount = parseFloat(depositAmountString);
+    withdrawField.value = '';
+    if (isNaN(withdrawAmount)) {
+        alert('provide a number');
+        return
+    }
     
 
     const totalDepositAmount= document.getElementById('deposit-total');
@@ -28,6 +33,5 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 
     // const depositFinal = depositAmount + depositTotal;
 
-    depositField.value='';
     
 })
