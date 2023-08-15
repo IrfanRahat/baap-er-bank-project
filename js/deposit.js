@@ -28,10 +28,7 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const totalBalance = parseFloat(totalBalanceString);
     // finalbalance e totalbalance jog deposit input er variable taake jog korbo
     const finalBalance = totalBalance + depositAmount;
-    totalBalanceField.innerText = finalBalance;
-
-
-    // const depositFinal = depositAmount + depositTotal;
+    totalBalanceField.innerText = finalBalance
 
     
 })
