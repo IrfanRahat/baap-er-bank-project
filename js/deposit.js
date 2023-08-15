@@ -5,8 +5,8 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const depositAmountString = depositField.value;
 //  string to number kore nilam
     const depositAmount = parseFloat(depositAmountString);
-    withdrawField.value = '';
-    if (isNaN(withdrawAmount)) {
+    depositField.value = '';
+    if (isNaN(depositAmount)) {
         alert('provide a number');
         return
     }
